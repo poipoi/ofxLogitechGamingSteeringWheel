@@ -4,7 +4,7 @@
 #include "LogitechSteeringWheelLib.h"
 
 
-class SteeringWheel {
+class ofxLogitechGamingSteeringWheel {
 public:
 	void setup(uint8_t controllerNo, bool isBackground = false) {
 		ctrlNo = controllerNo;
@@ -21,7 +21,7 @@ public:
 			return;
 		}
 
-		ofAddListener(ofGetWindowPtr()->events().update, this, &SteeringWheel::update, OF_EVENT_ORDER_APP);
+		ofAddListener(ofGetWindowPtr()->events().update, this, &ofxLogitechGamingSteeringWheel::update, OF_EVENT_ORDER_APP);
 	}
 
 	void update(ofEventArgs & args) {

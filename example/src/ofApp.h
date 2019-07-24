@@ -29,7 +29,7 @@ class ofApp : public ofBaseApp{
 			LogiSteeringShutdown();
 		}
 
-		SteeringWheel wheel;
+		ofxLogitechGamingSteeringWheel wheel;
 
 
 		ofxPanel gui1;
